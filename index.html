@@ -4,29 +4,137 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#03110a">
 <title>Killbox Codes | Atomic</title>
+
 <style>
-:root{--green:#00AAFF;--bg:#060615;--panel:#101027;--line:#6336A8;--muted:#B9A5E8}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#062717 0,#020806 55%);color:#effff5;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-header{padding:28px 18px 24px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#03170c,#010503)}
-.brand{font-weight:1000;letter-spacing:2px;font-size:clamp(28px,7vw,48px);color:var(--green);text-shadow:0 0 20px #00ff4c66}
-.sub{color:#c2f8d7;letter-spacing:4px;font-size:12px;margin-top:5px}.atomic{color:var(--green);font-weight:800;margin-top:12px}
-main{max-width:1050px;margin:auto;padding:18px 13px 40px}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.tab{border:1px solid var(--line);background:#04110b;color:#eafff1;padding:14px 4px;border-radius:12px;font-weight:800;font-size:14px}
-.tab.active{border:2px solid var(--green);color:var(--green);box-shadow:0 0 15px #00ff4c25;background:#062212}
-.search{margin:15px 0;display:flex;gap:8px;border:1px solid var(--green);border-radius:12px;padding:11px 13px;background:#03100a}
-.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;font-size:16px}.search span{color:var(--green)}
-.stats{display:flex;justify-content:space-around;gap:10px;flex-wrap:wrap;border:1px solid var(--line);background:#04140c;border-radius:12px;padding:13px;margin-bottom:18px;color:var(--muted);font-size:13px}
-.stats b{display:block;color:var(--green);font-size:20px}
-.heading{display:flex;justify-content:space-between;align-items:center;color:var(--green);font-size:20px;font-weight:900;padding:12px;border:1px solid var(--green);border-radius:12px 12px 0 0}
-.count{font-size:12px;letter-spacing:1px}.items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:8px;padding:9px;background:#030b07;border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px}
-.item{display:flex;align-items:center;gap:10px;min-width:0;padding:12px;border:1px solid #0a3822;background:linear-gradient(100deg,#071b10,#03100a);border-radius:10px}
-.glyph{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;border:1px solid #08783b;border-radius:9px;color:var(--green);font-size:23px}
-.details{min-width:0;flex:1}.name{font-weight:700;overflow-wrap:anywhere}.code{color:#9acdb8;font-size:13px;margin-top:4px;direction:ltr;text-align:left}
-.copy{background:#052311;color:var(--green);border:1px solid var(--green);border-radius:9px;padding:9px 10px;font-weight:800;white-space:nowrap}.copy:active{background:var(--green);color:#001b09}
-footer{text-align:center;color:var(--green);padding:25px 10px;letter-spacing:2px;font-weight:800}
-.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#00ff4c;color:#001a08;padding:10px 18px;border-radius:20px;font-weight:800;display:none;box-shadow:0 0 25px #00ff4c55}
-@media(min-width:700px){.item{padding:13px}.glyph{width:48px;height:48px}}
-</style></head>
+:root{
+  --green:#00AAFF;
+  --bg:#080817;
+  --panel:#101027;
+  --line:#6336A8;
+  --muted:#B9A5E8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at top,#17103A 0,#060615 58%);
+  color:#F2EEFF;
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+header{
+  padding:28px 18px 24px;
+  text-align:center;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(135deg,#10152E,#09091C);
+}
+.brand{
+  font-weight:1000;
+  letter-spacing:2px;
+  font-size:clamp(28px,7vw,48px);
+  color:#00AAFF;
+  text-shadow:0 0 20px #00AAFF66;
+}
+.sub{
+  color:#C4B5FD;
+  letter-spacing:4px;
+  font-size:12px;
+  margin-top:5px;
+}
+.atomic{color:#A855F7;font-weight:800;margin-top:12px}
+main{max-width:1050px;margin:auto;padding:18px 13px 40px}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tab{
+  border:1px solid #6336A8;
+  background:#11152F;
+  color:#E9DDFF;
+  padding:14px 4px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:14px;
+}
+.tab.active{
+  border:2px solid #00AAFF;
+  color:#00AAFF;
+  box-shadow:0 0 15px #00AAFF30;
+  background:#17103A;
+}
+.search{
+  margin:15px 0;
+  display:flex;
+  gap:8px;
+  border:1px solid #00AAFF;
+  border-radius:12px;
+  padding:11px 13px;
+  background:#0B0D20;
+}
+.search input{
+  flex:1;min-width:0;background:transparent;
+  border:0;outline:0;color:white;font-size:16px;
+}
+.search span{color:#00AAFF}
+.stats{
+  display:flex;justify-content:space-around;gap:10px;
+  flex-wrap:wrap;border:1px solid #6336A8;
+  background:#100D25; border-radius:12px;
+  padding:13px;margin-bottom:18px;
+  color:#B9A5E8;font-size:13px;
+}
+.stats b{display:block;color:#00AAFF;font-size:20px}
+.heading{
+  display:flex;justify-content:space-between;
+  align-items:center;color:#00AAFF;font-size:20px;
+  font-weight:900;padding:12px;
+  border:1px solid #00AAFF;border-radius:12px 12px 0 0;
+}
+.count{font-size:12px;letter-spacing:1px}
+.items{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));
+  gap:8px;padding:9px;background:#09091A;
+  border:1px solid #6336A8;border-top:0;
+  border-radius:0 0 12px 12px;
+}
+.item{
+  display:flex;align-items:center;gap:10px;min-width:0;
+  padding:12px;border:1px solid #39245E;
+  background:linear-gradient(100deg,#15102B,#0B1024);
+  border-radius:10px;
+}
+.glyph{
+  width:42px;height:42px;flex-shrink:0;
+  display:grid;place-items:center;
+  border:1px solid #8B5CF6;border-radius:9px;
+  color:#00AAFF;font-size:23px;
+}
+.details{min-width:0;flex:1}
+.name{font-weight:700;overflow-wrap:anywhere}
+.code{
+  color:#B9A5E8;font-size:13px;margin-top:4px;
+  direction:ltr;text-align:left;
+}
+.copy{
+  background:#17102D;color:#00AAFF;
+  border:1px solid #A855F7;border-radius:9px;
+  padding:9px 10px;font-weight:800;white-space:nowrap;
+}
+.copy:active{background:#00AAFF;color:#060615}
+footer{
+  text-align:center;color:#A855F7;
+  padding:25px 10px;letter-spacing:2px;font-weight:800;
+}
+.toast{
+  position:fixed;bottom:20px;left:50%;
+  transform:translateX(-50%);
+  background:#A855F7;color:#FFFFFF;
+  padding:10px 18px;border-radius:20px;
+  font-weight:800;display:none;
+  box-shadow:0 0 25px #A855F755;
+}
+@media(min-width:700px){
+  .item{padding:13px}
+  .glyph{width:48px;height:48px}
+}
+</style>
+ 
 <body>
 <header><div class="brand">♛ ATOMIC CODES</div><div class="sub">FAST • SIMPLE • MOBILE FRIENDLY</div><div class="atomic">✦ BY ATOMIC ✦</div></header>
 <main>
