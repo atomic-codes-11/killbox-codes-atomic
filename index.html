@@ -206,6 +206,6 @@ const code = category === 'Grenades' ? item[0] : item[1];
  });
 }
 let toastTimer;function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display='none',1700)}
-  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');category=b.dataset.cat;search.value='';render()}));
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');category=b.dataset.cat;search.value='';render()}));
 render();
 </script></body></html>
