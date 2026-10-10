@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#03110a">
+<title>Killbox Codes | Atomic</title>
+<style>
+:root{--green:#00ff4c;--bg:#020806;--panel:#06150f;--line:#075d31;--muted:#91c7b4}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#062717 0,#020806 55%);color:#effff5;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:28px 18px 24px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#03170c,#010503)}
+.brand{font-weight:1000;letter-spacing:2px;font-size:clamp(28px,7vw,48px);color:var(--green);text-shadow:0 0 20px #00ff4c66}
+.sub{color:#c2f8d7;letter-spacing:4px;font-size:12px;margin-top:5px}.atomic{color:var(--green);font-weight:800;margin-top:12px}
+main{max-width:1050px;margin:auto;padding:18px 13px 40px}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tab{border:1px solid var(--line);background:#04110b;color:#eafff1;padding:14px 4px;border-radius:12px;font-weight:800;font-size:14px}
+.tab.active{border:2px solid var(--green);color:var(--green);box-shadow:0 0 15px #00ff4c25;background:#062212}
+.search{margin:15px 0;display:flex;gap:8px;border:1px solid var(--green);border-radius:12px;padding:11px 13px;background:#03100a}
+.search input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;font-size:16px}.search span{color:var(--green)}
+.stats{display:flex;justify-content:space-around;gap:10px;flex-wrap:wrap;border:1px solid var(--line);background:#04140c;border-radius:12px;padding:13px;margin-bottom:18px;color:var(--muted);font-size:13px}
+.stats b{display:block;color:var(--green);font-size:20px}
+.heading{display:flex;justify-content:space-between;align-items:center;color:var(--green);font-size:20px;font-weight:900;padding:12px;border:1px solid var(--green);border-radius:12px 12px 0 0}
+.count{font-size:12px;letter-spacing:1px}.items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:8px;padding:9px;background:#030b07;border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px}
+.item{display:flex;align-items:center;gap:10px;min-width:0;padding:12px;border:1px solid #0a3822;background:linear-gradient(100deg,#071b10,#03100a);border-radius:10px}
+.glyph{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;border:1px solid #08783b;border-radius:9px;color:var(--green);font-size:23px}
+.details{min-width:0;flex:1}.name{font-weight:700;overflow-wrap:anywhere}.code{color:#9acdb8;font-size:13px;margin-top:4px;direction:ltr;text-align:left}
+.copy{background:#052311;color:var(--green);border:1px solid var(--green);border-radius:9px;padding:9px 10px;font-weight:800;white-space:nowrap}.copy:active{background:var(--green);color:#001b09}
+footer{text-align:center;color:var(--green);padding:25px 10px;letter-spacing:2px;font-weight:800}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#00ff4c;color:#001a08;padding:10px 18px;border-radius:20px;font-weight:800;display:none;box-shadow:0 0 25px #00ff4c55}
+@media(min-width:700px){.item{padding:13px}.glyph{width:48px;height:48px}}
+</style></head>
+<body>
+<header><div class="brand">♛ KILLBOX CODES</div><div class="sub">FAST • SIMPLE • MOBILE FRIENDLY</div><div class="atomic">✦ BY ATOMIC ✦</div></header>
+<main>
+<div class="tabs">
+<button class="tab active" data-cat="Guns">🔫 GUNS</button><button class="tab" data-cat="Pistols">▰ PISTOLS</button><button class="tab" data-cat="Knives">🔪 KNIVES</button>
+</div>
+<label class="search"><span>⌕</span><input id="search" placeholder="Search by name or code..." autocomplete="off"><span id="clear" style="cursor:pointer">✕</span></label>
+<div class="stats"><div>Total Guns<b>110</b></div><div>Total Pistols<b>23</b></div><div>Total Knives<b>27</b></div><div>♛ ATOMIC</div></div>
+<div class="heading"><span id="title">🔫 GUNS</span><span class="count" id="count">110 ITEMS</span></div>
+<div class="items" id="items"></div>
+</main><footer>♛ KILLBOX CODES | ATOMIC ♛<br><small>PLAY • ENJOY • BE LEGEND</small></footer><div class="toast" id="toast">Code copied!</div>
+<script>
+const data = {"Guns": [["اپو", 1030901], ["امفور کینگ کبرا", 1030902], ["گاتلین", 1030903], ["کینگ کبرا", 1030904], ["کی اس جی", 1030905], ["امپی لوتوس", 1030906], ["ای کی بورن بست", 1030907], ["امفور بورن بست", 1030908], ["اسپی بورن بست", 1030909], ["ای کی دراگون", 1030911], ["ام14 بورن بست", 1030912], ["اسپی اینفرنال دراگون", 1030913], ["بارت", 1030916], ["فاماس", 1030917], ["فاماس ایرون شارک", 1030918], ["یو ام پی", 1030919], ["امفور انجل", 1030921], ["امفور کویین", 1030922], ["ای کی رویال", 1030926], ["گست قرمز", 1030927], ["گیتار¹", 1030928], ["ام14 نوبل گلد", 1030929], ["اسپی گلد", 1030930], ["⚡#ATOM⚡", 1030931], ["ار پی کی رویال گلد", 1030932], ["گیتار", 1030937], ["ام14 بلو بست", 1030938], ["تی ام پی", 1030939], ["امفور گلد", 1030940], ["تامسون دراگون", 1030941], ["اپو لانگ", 1030942], ["ای کی نوبل گلد", 1030943], ["اسپی نوبل گلد", 1030944], ["امفور بلو", 1030946], ["امپی ساید کیک", 1030949], ["امفور کبرا اسید", 1030950], ["اسپی بارت دراگون", 1030951], ["فایر طلایی", 1030952], ["بالیوز", 1030953], ["اکسپرس گلکسی", 1030954], ["فاماس سونیک", 1030955], ["اپو هاوک", 1030956], ["دوئل گلد", 1030957], ["اسکارلایت", 1030958], ["گاتلین رویال گلد", 1030960], ["ای کی بلو بست", 1030961], ["دیابلو", 1030963], ["فاماس اکسنو", 1030964], ["فاماس الفا", 1030965], ["امفور دیابلو", 1030966], ["عن94 دیابلو", 1030967], ["ای کی دیابلو", 1030968], ["امفور ال کی", 1030969], ["ای کی کریسمس", 1030970], ["اسنایپ کیریسمس", 1030971], ["سی ار کیریسمس", 1030972], ["تامسون کیریسمس", 1030973], ["تروم", 1030974], ["امفور تولد", 1030975], ["کاک تولد", 1030976], ["اپو تولد", 1030977], ["🗿ERF.ATOM🥀", 1030979], ["اسپی نوبل گلد", 1030980], ["ایکس ام8 سال نو", 1030981], ["ای کی سال نو", 1030982], ["امفور ایرون", 1030983], ["لاور", 1030985], ["🗿🥀", 1030986], ["ایکس ام 8 سایلنس", 1030987], ["اسپی سایلنس", 1030988], ["رگباری سایلنس", 1030990], ["فستی", 1030991], ["ایرون اونجرز", 1030992], ["مرد ایرون اونجرز", 1030993], ["استار گلکسی", 1030994], ["کانگ", 1030995], ["تامسون سوپر بوم", 1030996], ["اپو دیسکولوز", 1030997], ["مار", 1030998], ["امفور لیبرتی", 1031002], ["اسنایپ لیبرتی", 1031003], ["ای کی ام استرایک", 1031006], ["ام16 استرایک", 1031007], ["اسپی استرایک", 1031008], ["اسپی²", 1031010], ["اپو پارتی", 1031011], ["اپو فضایی", 1031013], ["اپو اینفرنو", 1031015], ["اپو انجل", 1031016], ["اپو گلد", 1031017], ["اپو زامبی", 1031018], ["اپو گاتو", 1031019], ["ای کی نیو", 1031020], ["امفور نیو", 1031021], ["امفور ایرون وولف", 1031023], ["اپو وی", 1031024], ["ای کی پلات", 1031025], ["اسپی کیریستال", 1031026], ["ای کی بست پرایم", 1031027], ["اپو پرایم", 1031028], ["امفور بست پرایم", 1031029], ["گاتلین", 1031030], ["ای کی اکسکاواتور", 1031031], ["اکسکاواتور", 1031032], ["جدید¹", 1031034], ["لوتوس", 1031035], ["اسنایپ اینفرنو", 1031036], ["امفور اینفرنو", 1031037], ["اپو اینفرنو²", 1031038], ["کوکا", 1031040]], "Pistols": [["بست", 1030910], ["ام19", 1030914], ["یوزی", 1030915], ["گلاک", 1030923], ["لاوا", 1030924], ["شاتگان", 1030933], ["شاتگان(کلت)", 1030934], ["سانگ", 1030935], ["الفا", 1030936], ["بلو", 1030945], ["فونیکس", 1030947], ["ام19 کیریستال", 1030948], ["دیابلو", 1030962], ["تولد", 1030978], ["مار", 1030984], ["سایلنس", 1030989], ["لیبرتی", 1031001], ["سایلنس فرانسه", 1031009], ["مگا گان", 1031012], ["سگ", 1031014], ["پلات", 1031022], ["اکسکاواتور", 1031033], ["لوتوس", 1031039]], "Knives": [["چوب دراگ", 2011101], ["تانگ", 2013101], ["بورن بست", 2011201], ["عره", 2011301], ["کیریس گلد", 2011401], ["دراگون", 2011501], ["سابر", 2011601], ["بست²", 2011701], ["کیبورد", 2011801], ["نم²", 2011901], ["مانگ", 2012101], ["لیزر", 2012201], ["گلکسی", 2012401], ["شادو دراگون", 2012501], ["ثور", 2012601], ["دراگون³", 2012701], ["دیابلو", 2012801], ["کندی", 2012901], ["عره مار", 2013201], ["سایلنس", 2013301], ["مشت آهنی", 2013401], ["کاپ", 2013501], ["عصا", 2013601], ["نوبل", 2013701], ["لوتوس", 2013801], ["نیزه آبی", 2013901], ["عیزرائیل", 2014101]]};
+let category='Guns';
+const icons={Guns:'🔫',Pistols:'▰',Knives:'🔪'};
+const labels={Guns:'GUNS',Pistols:'PISTOLS',Knives:'KNIVES'};
+const items=document.getElementById('items'), search=document.getElementById('search');
+function render(){
+ const q=search.value.trim().toLocaleLowerCase();
+ const found=data[category].filter(x=>x[0].toLocaleLowerCase().includes(q)||String(x[1]).includes(q));
+ document.getElementById('title').textContent=icons[category]+' '+labels[category];
+ document.getElementById('count').textContent=found.length+' ITEMS';
+ items.innerHTML='';
+ found.forEach(([name,code])=>{
+  const card=document.createElement('article');card.className='item';
+  const glyph=document.createElement('div');glyph.className='glyph';glyph.textContent=icons[category];
+  const details=document.createElement('div');details.className='details';
+  const nm=document.createElement('div');nm.className='name';nm.textContent=name;
+  const cd=document.createElement('div');cd.className='code';cd.textContent='Code: '+code;
+  details.append(nm,cd);
+  const btn=document.createElement('button');btn.className='copy';btn.textContent='▣ Copy';
+  btn.addEventListener('click',async()=>{
+   try{await navigator.clipboard.writeText(String(code));showToast('Code copied: '+code)}
+   catch(e){const t=document.createElement('textarea');t.value=String(code);document.body.append(t);t.select();document.execCommand('copy');t.remove();showToast('Code copied: '+code)}
+  });
+  card.append(glyph,details,btn);items.append(card);
+ });
+}
+let toastTimer;function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display='none',1700)}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.cat;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));render()}));
+search.addEventListener('input',render);document.getElementById('clear').addEventListener('click',()=>{search.value='';render();search.focus()});
+render();
+</script></body></html>
